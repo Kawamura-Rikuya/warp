@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHISHA WARP Ocha</title>
+    <link rel="stylesheet" href="/css/och_style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- section01 -->
+    <section class="sec-01">
+      <div class="container">
+        <h2 class="main-title">水タバコ専門店<br>SHISHA WARP</h2>
+        <div class="content">
+          <div class="image">
+            <img src="/images/ocha/ocha.jpeg" alt="" />
+          </div>
+          <div class="text-box">
+            <h3>御茶ノ水店</h3>
+            <p>
+                平日：15-24 土日祝：13-24<br>
+                定休日なし<br>
+                070-4065-0865<br>
+            </p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.instagram.com/shishawarp_ocha" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/shishawarp" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section02 -->
+    <section class="sec-02">
+      <div class="container">
+        <h3 class="section-title">こだわりの空間</h3>
+        <div class="content">
+          <div class="image">
+            <img src="/images/ocha/ocha2.jpeg" alt="" />
+          </div>
+          <div class="info">
+            <h4 class="info-title">一人で、気の知れた友達と、恋人と</h4>
+            <p>
+                総席数12席の小さなお店だから実現可能なプライベート空間
+                初めての人もベテランの人も満足の最高のシーシャをご提供
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section03 -->
+    <section class="sec-03">
+      <div class="container">
+        <h3 class="section-title">こだわりドリンク</h3>
+        <div class="content">
+          <div class="media-info">
+            <h4 class="info-title">いつでも、どんなシーンでも</h4>
+            <p>
+                御茶ノ水駅徒歩4分<br>
+                新御茶ノ水・小川町・淡路町各駅徒歩1分<br>
+                料金 3,000円/名〜<br>
+            </p>
+        </div>
+          <div class="image">
+            <img src="/images/ocha/ocha3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      //共通のオプション設定
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2000, //2sかけてアニメーション
+        delay: 200 /* 0.2s後に発動 */,
+      });
+
+      ScrollReveal().reveal(".main-title, .section-title", {
+        delay: 200,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".sec-01 .image, .info", {
+        delay: 600,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".text-box", {
+        delay: 700,
+        origin: "right",
+      });
+      ScrollReveal().reveal(".media-icons i", {
+        delay: 500,
+        origin: "bottom",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+        delay: 500,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".media-info", {
+        delay: 500,
+        origin: "left",
+        interval: 200,
+      });
+    </script>
+  </body>
+</html>

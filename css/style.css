@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(/images/backmain.jpeg);
+  /* background: linear-gradient(rgb(52, 72, 92), rgb(34, 34, 51)); */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+
+.container {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.content {
+  /* position: relative; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .image {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.content .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.content .text-box {
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;/* 丸みを帯びさせる */
+  transform: translate(-80px, 50px);/* 画像に重なりを持たせることができる */
+}
+
+.content .text-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.content .text-box p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.media-icons {
+  margin-top: 100px;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 60px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 80px;
+}
+
+.info-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.info a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+.media-info {
+  width: 500px;
+  margin-right: 50px;
+}
+
+.media-info a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+/* .media-info li:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+  padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+  padding-left: 50px;
+} */
+
+.sec-03 {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px){
+  section{
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+  }
+  .sec-01{
+    margin-bottom: 40px;
+  }
+  .section-title{
+    margin: 40px;
+  }
+  .info{
+    margin: 0px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .media-info{
+    margin: 0px;
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-title{
+    font-size: 2rem;
+  }
+  .content {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .image {
+    width: 350px;
+    height: 400px;
+  }
+  .content .image img{
+    padding: 20px 0 30px 0;
+  }
+  .content .text-box {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 20px 70px;
+    margin: 0 0 40px 0;
+  }
+  .content .text-box h3 {
+    font-size: 1.2em;
+  }
+  .content .text-box p {
+    font-size: 0.8em;
+  }
+  .info-title {
+    font-size: 1.2em;
+  }
+  .content p{
+    font-size: 0.9em;
+  }
+  .content a{
+    font-size: 1em;
+  }
+  .media-icons {
+    margin-top: 10px;
+    display: flex;
+  }
+  .icon{
+    margin: 30px;
+  }
+}
